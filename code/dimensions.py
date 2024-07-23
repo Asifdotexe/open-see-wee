@@ -39,3 +39,11 @@ print("Dimensions",transparent_image.shape)
 print("Height", transparent_image.shape[0])
 print("Width", transparent_image.shape[1])
 print("Channel", transparent_image.shape[2])
+
+# reading 16 bit / channel color image
+image = cv.imread('image\16bit.avif', cv.IMREAD_ANYCOLOR | cv.IMREAD_ANYDEPTH) 
+print("Dimensions",image.shape)
+print("Height", image.shape[0])
+print("Width", image.shape[1])
+print("Channel", image.shape[2])
+
