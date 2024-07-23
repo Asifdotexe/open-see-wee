@@ -33,4 +33,9 @@ channel = image_grayscale.shape[2]
 # printing the properties of the image
 print('dimension:', dimension,'height:', height, 'width:', width, 'channel:', channel)
 
-
+# reading a transparent image
+transparent_image = cv.imread('image\shinchan.png', cv.IMREAD_UNCHANGED)
+print("Dimensions",transparent_image.shape)
+print("Height", transparent_image.shape[0])
+print("Width", transparent_image.shape[1])
+print("Channel", transparent_image.shape[2])
