@@ -46,4 +46,3 @@ print("Dimensions",image.shape)
 print("Height", image.shape[0])
 print("Width", image.shape[1])
 print("Channel", image.shape[2])
-
