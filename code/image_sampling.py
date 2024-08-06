@@ -11,3 +11,4 @@ cv.imwrite(r'..\image\ok_upsampled.jpg', imageUpSampled)
 # downsampling
 imageDownSample = cv.pyrDown(image)
 cv.imwrite(r'..\image\ok_downsampled.jpg', imageDownSample)
+
