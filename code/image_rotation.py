@@ -10,3 +10,4 @@ M = np.float32([[1,0,0],
 
 rotated_image = cv.warpAffine(image, cv.getRotationMatrix2D((cols/2,rows/2),90,0.6), (cols,rows))
 cv.imwrite(r'..\image\ok_rotated_image.jpg', rotated_image)
+x
