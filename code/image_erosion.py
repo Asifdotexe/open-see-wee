@@ -5,6 +5,7 @@ image = cv.imread(r'..\image\binary_one.png')
 image_rick = cv.imread(r'..\image\rickroll.jpg', cv.IMREAD_GRAYSCALE)
 
 kernal= np.ones((3,3), np.uint8)
+
 erosion_iter_1 = cv.erode(image, kernal, iterations=1)
 erosion_iter_2 = cv.erode(image, kernal, iterations=2)
 erosion_iter_3 = cv.erode(image, kernal, iterations=3)
