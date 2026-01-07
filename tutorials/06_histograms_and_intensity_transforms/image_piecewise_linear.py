@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-image = cv.imread(r'..\image\ok.jpg')
+image = cv.imread(r'..\..\image\ok.jpg')
 
 row, col = image.shape[:2]
 output_image = np.zeros((row, col), dtype='uint8')
@@ -15,4 +15,4 @@ for i in range(row):
         else:
             output_image[i,j] = image[i-1,j-1].min()
             
-cv.imwrite(r'..\image\ok_piecewise_linear.jpg', output_image)
+cv.imwrite(r'../../image/ok_piecewise_linear.jpg', output_image)
