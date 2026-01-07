@@ -1,10 +1,10 @@
 import cv2 as cv
 import numpy as np
 
-image = cv.imread(r'..\image\ok.jpg')
-elgato = cv.imread(r'..\image\greyscale_cat.jpg')
-shinchan = cv.imread(r'..\image\shinchan.png')
-rick = cv.imread(r'..\image\rickroll.jpg')
+image = cv.imread(r'..\..\image\ok.jpg')
+elgato = cv.imread(r'..\..\image\greyscale_cat.jpg')
+shinchan = cv.imread(r'..\..\image\shinchan.png')
+rick = cv.imread(r'..\..\image\rickroll.jpg')
 
 kernelSharp = np.array([
         [0, -1, 0],
