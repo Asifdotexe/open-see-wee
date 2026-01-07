@@ -1,6 +1,6 @@
 import cv2 as cv
 
-video = cv.VideoCapture(r'../video/tracking.mp4')
+video = cv.VideoCapture(r'..\..\video\tracking.mp4')
 ret, frame = video.read()
 
 if not ret:
