@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-image = cv.imread(r'..\image\ok.jpg')
+image = cv.imread(r'..\..\image\ok.jpg')
 
 dimension = image.shape
 height = image.shape[0]

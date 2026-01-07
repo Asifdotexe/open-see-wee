@@ -1,6 +1,6 @@
 import cv2 as cv
 
-capture = cv.VideoCapture(r'../video/tracking.mp4')
+capture = cv.VideoCapture(r'..\..\video\tracking_resized.mp4')
 
 while True:
     ret, frame = capture.read()

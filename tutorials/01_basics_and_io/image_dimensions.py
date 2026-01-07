@@ -23,7 +23,7 @@ channel_bw = image_bw.shape[2]
 # printing the properties of the image
 print('dimension:', dimension_bw,'height:', height_bw, 'width:', width_bw, 'channel:', channel_bw)
 
-image_grayscale = cv.imread('image\ok.jpg', cv.IMREAD_GRAYSCALE)
+image_grayscale = cv.imread(r'..\..\image\ok.jpg', cv.IMREAD_GRAYSCALE)
 
 dimension = image_grayscale.shape
 height = image_grayscale.shape[0]
