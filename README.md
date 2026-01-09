@@ -39,12 +39,6 @@ Understand image compression techniques.
 3.  Run the Python scripts to see the code in action.
     *   Note: You may need to adjust image paths in the scripts if you run them directly, as the directory structure has changed. Ideally, run scripts from inside their respective folders.
 
-## Requirements
-*   Python 3.x
-*   OpenCV (`pip install opencv-python`)
-*   NumPy (`pip install numpy`)
-*   Matplotlib (`pip install matplotlib`)
-
 ## Environment Setup
 
 This project uses [Poetry](https://python-poetry.org/) for dependency management which ensures a reproducible environment.
