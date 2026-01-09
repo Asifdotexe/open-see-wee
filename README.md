@@ -44,3 +44,24 @@ Understand image compression techniques.
 *   OpenCV (`pip install opencv-python`)
 *   NumPy (`pip install numpy`)
 *   Matplotlib (`pip install matplotlib`)
+
+## Environment Setup
+
+This project uses [Poetry](https://python-poetry.org/) for dependency management which ensures a reproducible environment.
+
+1.  **Install Poetry**: If you haven't already, install Poetry by following the [official guide](https://python-poetry.org/docs/#installation).
+
+2.  **Install Dependencies**: Navigate to the project root and run:
+    ```bash
+    poetry install
+    ```
+
+3.  **Run Scripts**: You can execute scripts within the Poetry environment using `poetry run`. For example:
+    ```bash
+    poetry run python tutorials/01_basics_and_io/image_rotation.py
+    ```
+    Alternatively, spawn a shell within the environment:
+    ```bash
+    poetry shell
+    python tutorials/01_basics_and_io/image_rotation.py
+    ```
