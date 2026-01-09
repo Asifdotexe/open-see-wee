@@ -17,4 +17,4 @@ output = cv.drawContours(
     thickness=2, lineType=cv.LINE_AA
 )
 
-cv.imwrite('../../image/delete_karde_bro.png', output)
+cv.imwrite('../../image/luffy_segmentation_output.png', output)

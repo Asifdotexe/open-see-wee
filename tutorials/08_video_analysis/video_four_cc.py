@@ -1,7 +1,10 @@
 import cv2 as cv
 
 # Open the video file
-capture = cv.VideoCapture(r'..\..\video\tracking.mp4')
+from pathlib import Path
+base_dir = Path(__file__).resolve().parent.parent.parent
+video_path = str(base_dir / 'video' / 'tracking.mp4')
+capture = cv.VideoCapture(video_path)
 
 # Define the codec and create VideoWriter object
 fourcc = cv.VideoWriter_fourcc(*"mp4v")
@@ -24,7 +27,8 @@ else:
         dimensions = (new_width, new_height)
 
         # Initialize the video writer with the new dimensions
-        output_video = cv.VideoWriter(r"..\..\video\tracking_resized.mp4", fourcc, 30, dimensions)
+        output_path = str(base_dir / 'video' / 'tracking_resized.mp4')
+        output_video = cv.VideoWriter(output_path, fourcc, 30, dimensions)
 
         while True:
             # Read frame by frame

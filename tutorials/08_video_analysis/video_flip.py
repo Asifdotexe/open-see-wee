@@ -1,6 +1,8 @@
 import cv2 as cv
 
-video = cv.VideoCapture(r'..\..\video\tracking.mp4')
+from pathlib import Path
+video_path = str(Path(__file__).resolve().parent.parent.parent / 'video' / 'tracking.mp4')
+video = cv.VideoCapture(video_path)
 ret, frame = video.read()
 
 if not ret:

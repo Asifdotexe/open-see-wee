@@ -18,7 +18,8 @@ canny_gaussian = cv.Canny(grayImage_gaussian_blur, threshold1=100, threshold2=20
 canny_median = cv.Canny(grayImage_median_blur, threshold1=100, threshold2=200)
 canny_gaussian_rick = cv.Canny(rick_gaussian_blur, threshold1=100, threshold2=120)
 
-cv.imwrite('../../image/hand_canny_edge_detection.jpg',canny_gaussian)
+canny_plain = cv.Canny(grayImage, threshold1=100, threshold2=200)
+cv.imwrite('../../image/hand_canny_edge_detection.jpg',canny_plain)
 cv.imwrite('../../image/rick_canny_edge_detection.jpg',canny_gaussian_rick)
 cv.imwrite('../../image/hand_median_blur_and_canny_edge_detection.jpg',canny_median)
 cv.imwrite('../../image/hand_gaussian_blur_and_canny_edge_detection.jpg',canny_gaussian)

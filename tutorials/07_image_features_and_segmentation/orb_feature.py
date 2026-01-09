@@ -1,7 +1,7 @@
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-image = cv.imread(r"..\..\image\coins_image.jpg")
+image = cv.imread("../../image/coins_image.jpg")
 
 orb = cv.ORB_create()
 keypoints = orb.detect(image, None)
