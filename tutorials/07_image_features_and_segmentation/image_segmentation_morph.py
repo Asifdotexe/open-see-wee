@@ -1,6 +1,8 @@
 import cv2 as cv
 import numpy as np
-image = cv.imread(r"D:\SDBI\5th Semester\Image and Video Analytis\Practicals\image\Coins_image.jpeg")
+image = cv.imread("../../image/coins_image.jpg")
+if image is None:
+    raise RuntimeError("Failed to load image from ../../image/coins_image.jpg")
 image_gray = cv.cvtColor(image,cv.COLOR_BGR2GRAY)
 ret , thresh = cv.threshold(image_gray,103.555,255,cv.THRESH_BINARY + cv.THRESH_OTSU)
 cv.imshow("Threshold Image",thresh)

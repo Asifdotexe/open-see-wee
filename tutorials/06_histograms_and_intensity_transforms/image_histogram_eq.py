@@ -2,7 +2,7 @@ import cv2 as cv
 
 import numpy as np
 
-image = cv.imread(r'..\image\ok.jpg', cv.IMREAD_GRAYSCALE)
+image = cv.imread(r'..\..\image\ok.jpg', cv.IMREAD_GRAYSCALE)
 
 histogram_eq_image = cv.equalizeHist(image)
 

@@ -1,8 +1,8 @@
 import cv2 as cv
 import numpy as np
 
-image1 = cv.imread('../image/luffy.jpg')
-image2 = cv.imread('../image/flag.png')
+image1 = cv.imread('../../image/luffy.jpg')
+image2 = cv.imread('../../image/flag.png')
 
 gray1 = cv.cvtColor(image1,cv.COLOR_BGR2GRAY)
 gray2 = cv.cvtColor(image2,cv.COLOR_BGR2GRAY)
@@ -26,4 +26,4 @@ print(f"Total number of features : {total_feature_count}")
 output = cv.drawMatches(gray1,keypoints1,gray2,keypoints2,number_of_matches[:30]
                         ,None,flags=2)
 
-cv.imwrite('../image/luffy_flag_feature_matching_brisk.png', output)
+cv.imwrite('../../image/luffy_flag_feature_matching_brisk.png', output)

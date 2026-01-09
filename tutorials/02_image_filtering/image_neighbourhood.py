@@ -1,11 +1,11 @@
 import cv2 as cv
 
-image = cv.imread(r'..\image\ok.jpg')
+image = cv.imread(r'..\..\image\ok.jpg')
 # creating a smaller mask image
 resized_image = cv.resize(image, (256,256))
 image_padded = cv.copyMakeBorder(resized_image,2,2,2,2,cv.BORDER_CONSTANT,None, value=(255,255,255))
 
-cv.imwrite(r'..\image\neighbourhood_padded_image.jpg', image_padded)
+cv.imwrite(r'..\..\image\neighbourhood_padded_image.jpg', image_padded)
 
 padded_copy = image_padded.copy()
 
@@ -21,4 +21,4 @@ for row in range(2,258):
                 mean = (sum - image_padded[row, col]) / (n-1)
                 padded_copy[row, col] = mean
         
-cv.imwrite(r'..\image\neighbourhood_padded_copy.jpg', padded_copy)
+cv.imwrite(r'..\..\image\neighbourhood_padded_copy.jpg', padded_copy)

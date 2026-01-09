@@ -1,8 +1,11 @@
 import cv2
 import numpy as np
 
+from pathlib import Path
+video_path = str(Path(__file__).resolve().parent.parent.parent / 'video' / 'tracking.mp4')
+
 # Load the video
-capture = cv2.VideoCapture(r"D:\SDBI\5th Semester\Image and Video Analytis\Practicals\image\tracking.mp4")
+capture = cv2.VideoCapture(video_path)
 
 # Read the first frame
 ret, frame = capture.read()

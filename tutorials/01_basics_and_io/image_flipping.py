@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-image = cv.imread(r'..\image\ok.jpg',0)
+image = cv.imread(r'..\..\image\ok.jpg',0)
 rows,cols  = image.shape
 
 matrix = np.float32([[1, 0,0],
@@ -10,4 +10,4 @@ matrix = np.float32([[1, 0,0],
 
 reflected_image = cv.warpPerspective(image, matrix, (int(cols),int(rows)))
 
-cv.imwrite(r'..\image\ok_reflected_image.jpg', reflected_image)
+cv.imwrite(r'..\..\image\ok_reflected_image.jpg', reflected_image)
